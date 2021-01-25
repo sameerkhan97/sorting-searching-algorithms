@@ -8,8 +8,9 @@ void swap(int &a, int &b) {
 }
 void display(int *a, int n) {
     int i;
-    for(i=0;i<n;i++){
-    cout<<a[i]<<" ";
+    for(i=0;i<n;i++)
+    {
+       cout<<a[i]<<" ";
     }
 }
 void insertSort(int *a, int n){
@@ -25,24 +26,20 @@ void insertSort(int *a, int n){
          }
     }
 }
-int main()
-{
+int main(){
     int n, i;
     cout<<"\nEnter Number of Elements ";
     cin>>n;
     int a[n];
-    
     cout<<"\nEnter "<<n<<" Elements ";
-    for(i=0;i<n;i++){
-    cin>>a[i];
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
     }
     cout<<"\nBefore Sorting : ";
     display(a, n) ;
-   
     insertSort(a, n) ;
-    
     cout<<"\nAfter Sorting :  ";
     display(a, n);
-    
     return 0;
  }
