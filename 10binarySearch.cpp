@@ -22,7 +22,8 @@ void selectSort(int *a, int n){
 }
 int binarySearch(int *a, int l, int u, int s){
     int mid;
-    if(l<=u){
+    if(l<=u)
+    {
         mid=(l+u)/2;
         if(a[mid]==s)
             return mid;
