@@ -8,13 +8,15 @@ void swap(int &a, int &b) {
 }
 void display(int *a, int n) {
     int i;
-    for(i=0;i<n;i++){
-    cout<<a[i]<<" ";
+    for(i=0;i<n;i++)
+    {
+        cout<<a[i]<<" ";
     }
 }
 void bubleSort(int *a, int n){
     int c=1,i;
-     while(c<n) {
+     while(c<n) 
+     {
         for(i=0;i<n;i++)
         {
             if(a[i]>a[i+1])
@@ -29,18 +31,15 @@ int main()
     cout<<"\nEnter Number of Elements ";
     cin>>n;
     int a[n];
-    
     cout<<"\nEnter "<<n<<" Elements ";
-    for(i=0;i<n;i++){
-    cin>>a[i];
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
     }
     cout<<"\nBefore Sorting : ";
-    display(a, n) ;
-   
-    bubleSort(a, n) ;
-    
+    display(a, n);
+    bubleSort(a, n); 
     cout<<"\nAfter Sorting :  ";
     display(a, n);
-    
     return 0;
  }
