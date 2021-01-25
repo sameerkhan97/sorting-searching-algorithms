@@ -8,44 +8,50 @@ void swap(int &a, int &b) {
 }
 void display(int *a, int n){
     int i;
-    for(i=0;i<n;i++){
+    for(i=0;i<n;i++)
+    {
         cout<<a[i]<<" ";
     }
 }
-void merge(int *a,int l,int mid,int u) 
-{
-    
+void merge(int *a,int l,int mid,int u) {
     int b[u+1],i=l, j=mid+1, k=l;
-    while(i<=mid && j<=u){
-    
-    if(a[i]<=a[j]){
-        b[k]=a[i];
-        i++;
-    }
-    else{
-        b[k]=a[j];
-        j++;
-    }
-    k++;
-   }
-    if(i<=mid){
-    while(i<=mid) {
-        b[k]=a[i];
-        i++;
+    while(i<=mid && j<=u)
+    {
+        if(a[i]<=a[j])
+        {
+            b[k]=a[i];
+            i++;
+        }
+        else
+        {
+            b[k]=a[j];
+            j++;
+        }
         k++;
-     }
     }
-     if(j<=u){
-    while(j<=u) {
-        b[k]=a[j];
-        j++;
-        k++;
-     }
-   }
-    for(k=l;k<=u;k++){
-    a[k]=b[k];
-   }
- }
+    if(i<=mid)
+    {
+        while(i<=mid)
+        {
+            b[k]=a[i];
+            i++;
+            k++;
+        }
+    }
+    if(j<=u)
+    {
+        while(j<=u)
+        {
+            b[k]=a[j];
+            j++;
+            k++;
+        }
+    }
+    for(k=l;k<=u;k++)
+    {
+    `   a[k]=b[k];
+    }
+}
 void mergeSort(int *arr,int l,int u)
 {
     int mid;
@@ -57,8 +63,7 @@ void mergeSort(int *arr,int l,int u)
         merge(arr, l, mid, u) ;
      }
 }
-
- int main() {
+int main() {
     int i,size;
     cout<<"\nEnter Size of Array ";
     cin>>size;
@@ -69,12 +74,9 @@ void mergeSort(int *arr,int l,int u)
         cin>>arr[i];
     }
     cout<<"\nBefore Sorting : ";
-    display(arr, size);
-    
+    display(arr, size);   
     mergeSort(arr,0,size-1);
-    
     cout<<"\nAfter Sorting : ";
     display(arr, size);
     return 0;
-    
 }
