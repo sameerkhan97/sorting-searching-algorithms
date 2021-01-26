@@ -8,8 +8,7 @@ void swap(int &a, int &b) {
 }
 void display(int *a, int n){
     int i;
-    for(i=0;i<n;i++)
-    {
+    for(i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
 }
@@ -69,8 +68,7 @@ int main() {
     cin>>size;
     int arr[size];
     cout<<"\nEnter elements ";
-    for(i=0;i<size;i++) 
-    {
+    for(i=0;i<size;i++) {
         cin>>arr[i];
     }
     cout<<"\nBefore Sorting : ";
