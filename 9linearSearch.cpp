@@ -6,8 +6,9 @@ int main(){
     cin>>n;
     int a[n];
     cout<<"\nEnter "<<n<<" Elements ";
-    for(i=0;i<n;i++)
+    for(i=0;i<n;i++){
         cin>>a[i];
+    }
     cout<<"\nEnter element to search ";
     cin>>b;
     for(i=0;i<n;i++) 
