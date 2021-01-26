@@ -2,8 +2,9 @@
 using namespace std;
 void display(int *a, int n) {
     int i;
-    for(i=0;i<n;i++)
+    for(i=0;i<n;i++){
         cout<<a[i]<<" ";
+    }
 }
 void countSort(int *a, int n, int k){
     int i, count[k+1],b[n];
@@ -25,8 +26,7 @@ int main()
     cin>>n;
     int a[n];
     cout<<"\nEnter "<<n<<" Elements ";
-    for(i=0;i<n;i++)
-    {
+    for(i=0;i<n;i++){
         cin>>a[i];
         if(a[i]>max)
             max=a[i];
