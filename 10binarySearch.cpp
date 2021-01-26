@@ -40,8 +40,9 @@ int main(){
     cin>>n;
     int a[n];
     cout<<"\nEnter "<<n<<" Elements ";
-    for(i=0;i<n;i++)
+    for(i=0;i<n;i++){
         cin>>a[i];
+    }
     selectSort(a, n);
     cout<<"\nEnter element to search ";
     cin>>s;
@@ -51,4 +52,4 @@ int main(){
      else
         cout<<"\n"<<s<<" found at index "<<c;
     return 0;
- }
+}
