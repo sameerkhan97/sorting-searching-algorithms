@@ -2,8 +2,7 @@
 using namespace std;
 void display(int *a, int n){
     int i;
-    for(i=0;i<n;i++)
-    {
+    for(i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
 }
@@ -27,7 +26,7 @@ void shellSort(int *a, int n){
                     swap(a[i], a[i+gap]) ;
              }
         }
-     gap=gap/2;
+         gap=gap/2;
      }
  }
 int main(){
@@ -47,10 +46,3 @@ int main(){
     display(arr, size);
     return 0;
 }
-    
-    
-    
-    
-    
-    
-    
