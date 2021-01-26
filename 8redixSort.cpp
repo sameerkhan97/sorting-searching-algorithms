@@ -2,8 +2,9 @@
 using namespace std;
 void display(int *a, int n) {
     int i;
-    for(i=0;i<n;i++)
+    for(i=0;i<n;i++){
         cout<<a[i]<<" ";
+    }
 }
 void countSort(int *a, int n, int pos){
     int i, count[10],b[n];
@@ -21,7 +22,7 @@ void countSort(int *a, int n, int pos){
 void radixSort(int *a, int n, int max){
     int pos;
     for(pos=1;max/pos>0;pos*10)
-         countSort(a,n,pos);
+        countSort(a,n,pos);
 }
 int main(){
     int n, i, max=0;
@@ -29,8 +30,7 @@ int main(){
     cin>>n;
     int a[n];
     cout<<"\nEnter "<<n<<" Elements ";
-    for(i=0;i<n;i++)
-    {
+    for(i=0;i<n;i++){
         cin>>a[i];
         if(a[i]>max)
             max=a[i];
