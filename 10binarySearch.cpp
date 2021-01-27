@@ -31,7 +31,7 @@ int binarySearch(int *a, int l, int u, int s){
         if(a[mid]==s)
             return mid;
         if(a[mid]>s)
-            return binarySearch(a, l, mid-1, s);
+            return binarySearch(a,l, mid-1,s);
         if(a[mid]<s)
             return binarySearch(a, mid+1,u, s);
     }
