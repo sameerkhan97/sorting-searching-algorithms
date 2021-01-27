@@ -29,7 +29,7 @@ void bubleSort(int *a, int n){
 int main()
 {
     int n, i;
-    cout<<"\nEnter Number of Elements ";
+    cout<<"\nEnter Number of Elements  ";
     cin>>n;
     int a[n];
     cout<<"\nEnter "<<n<<" Elements ";
