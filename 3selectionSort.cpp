@@ -14,19 +14,20 @@ void display(int *a, int n) {
 }
 void selectSort(int *a, int n){
     int i,j,loc, min;
+    //min-store smallest value in array ,loc-store location of minimum value
     for(i=0;i<n;i++) 
     {
-       min=a[i];
+       min=a[i];    //every array element will be copied in min variable one by one and will be compared with all the next right side elements
        loc=i;
        for(j=i;j<n;j++)
        {
-            if(a[j]<min)
+            if(a[j]<min)  //It will find smallest element on right side of comparing element in Array
             {
               loc=j;
               min=a[j];
             }
         }
-     swap(a[i], a[loc]) ;
+     swap(a[i], a[loc]) ; //Smallest element in right side of array will be swapped with the comparing element
     }
 }
 int main(){
