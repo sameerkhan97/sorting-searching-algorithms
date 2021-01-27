@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//function return Sorted array
 void selectSort(int *a, int n){
     int i, j, min, loc;
     for(i=0;i<n;i++)
@@ -20,11 +21,13 @@ void selectSort(int *a, int n){
         a[loc]=temp;
    }
 }
+// funct perform binary search and take parameters l-Lower index,u-upper index,s-element to search 
 int binarySearch(int *a, int l, int u, int s){
     int mid;
     if(l<=u)
     {
         mid=(l+u)/2;
+        //function recursively calls itself passing mid index untill either element is found or lower index > upper index
         if(a[mid]==s)
             return mid;
         if(a[mid]>s)
@@ -43,6 +46,7 @@ int main(){
     for(i=0;i<n;i++){
         cin>>a[i];
     }
+    //calling sort func. to arrange array in sorted order
     selectSort(a, n);
     cout<<"\nEnter element to search ";
     cin>>s;
