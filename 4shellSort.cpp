@@ -13,21 +13,21 @@ void swap(int &a, int &b){
     b=temp;
 }
 void shellSort(int *a, int n){
-    int i,gap=n/2, j;   //initially Gap is considered half of size of array
-   //function will compare every value with the value present at a particular gap meaning ith element will be compared with (i+gap)th element and will be swaped if found greater
+    int i,gap=n/2, j;                 //initially Gap is considered half of size of array
+                                      //function will compare every value with the value present at a particular gap meaning ith element will be compared with (i+gap)th element
     while(gap>0)
     {
-        for(j=gap;j<n;j++)  //j will be use to access every single element
+        for(j=gap;j<n;j++)            //j will be use to access every single element
         {
-            for(i=j-gap;i>=0;i=i-gap)  //i will be use to compare elements with their gap element
-            {                         //if 0th element is compared with 3rd element and later 3rd element is swaped with 7th element
-                if(a[i]<=a[i+gap])    // then swapped element at 3rd will be again compared with 0th element using statement i=i-gap
+            for(i=j-gap;i>=0;i=i-gap)//i will be use to compare elements with their gap element
+            {                        //if 0th element is compared with 3rd element and later 3rd element is swaped with 7th element
+                if(a[i]<=a[i+gap])   // then swapped element at 3rd will be again compared with 0th element using statement i=i-gap
                     break;
                 else
                     swap(a[i], a[i+gap]) ;
              }
         }
-         gap=gap/2;
+         gap=gap/2;                 //Afrer Each cycle the gap is reduced to half
      }
  }
 int main(){
