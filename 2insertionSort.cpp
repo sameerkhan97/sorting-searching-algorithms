@@ -15,9 +15,9 @@ void display(int *a, int n) {
 void insertSort(int *a, int n){
     int i,j;
     for(i=1;i<n;i++) 
-    {
-        for(j=i;j>0;j--) 
-        {
+     {                      //It will take element at ith inedx and compare it with its previous element first and if found smaller then will it swap with previous.
+        for(j=i;j>0;j--)   //then it will be again compared with next previous element following same procedure untill no previous element is greater than it.
+        {                 
             if(a[j]<a[j-1])
                swap(a[j],a[j-1]);
             else
