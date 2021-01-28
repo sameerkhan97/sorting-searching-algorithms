@@ -32,7 +32,7 @@ void shellSort(int *a, int n){
  }
 int main(){
     int i,size;
-    cout<<"\nEnter Size of Array ";
+    cout<<"\nEnter Size of Array  ";
     cin>>size;
     int arr[size];
     cout<<"\nEnter elements ";
