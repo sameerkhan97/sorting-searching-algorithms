@@ -1,4 +1,4 @@
-#include<iostream>
+ #include<iostream>
 using namespace std;
 // function using reference variable and swap two values
 void swap(int &a, int &b) {
