@@ -18,7 +18,7 @@ void bubleSort(int *a, int n){
     //c will count the number of time array is checked and while loop will operate untill c is smaller than array size.
      while(c<n) 
      {
-        for(i=0;i<n;i++)
+        for(i=0;i<n-1;i++)
         {
             if(a[i]>a[i+1]) //Element at ith index will be compared with next element and if found smaller then will be swapped with next one.
                 swap(a[i], a[i+1]);
