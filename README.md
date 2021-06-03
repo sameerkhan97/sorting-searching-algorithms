@@ -5,15 +5,15 @@ The study includes a comparative sorting algorithms (i.e. Bubble sort, shell sor
 The programming language used to implement these sorting algorithms is C++. 
  
 ## Sorting Algorithms
-* [Buble Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/1bubleSort.cpp)
-* [Insertion Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/2Insertionsort.cpp)
-* [Selection Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/3selectionSort.cpp)
-* [Shell Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/4shellSort.cpp)
-* [Merge Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/5mergeSort.cpp)
-* [Quick Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/6quickSort.cpp)
-* [Count Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/7countSort.cpp)
-* [Redix Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/8redixSort.cpp)
+* [Buble Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/binarySearch.cpp)
+* [Insertion Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/insertionSort.cpp)
+* [Selection Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/selectionSort.cpp)
+* [Shell Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/shellSort.cpp)
+* [Merge Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/mergeSort.cpp)
+* [Quick Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/quickSort.cpp)
+* [Count Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/countSort.cpp)
+* [Redix Sort](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/redixSort.cpp)
 
 ## Searching Algorithms
-* [Linear Search](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/9linearSearch.cpp)
-* [Binary Search](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/10binarySearch.cpp)
+* [Linear Search](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/linearSearch.cpp)
+* [Binary Search](https://github.com/sameerkhan97/sorting-searching-algorithms/blob/master/binarySearch.cpp)
