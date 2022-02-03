@@ -12,8 +12,8 @@ void display(int *a, int n){
         cout<<a[i]<<" ";
     }
 }
-/*func. sort 2 sub array and merge them into another array b,then copy array b into original array a.
-array 1 ranges from loweIndex-mid,array 2 ranges from mid+1-upperIndex.*/
+//func. sort 2 sub array and merge them into another array b,then copy array b into original array a.
+//array 1 ranges from loweIndex-mid,array 2 ranges from mid+1-upperIndex.
 void merge(int *a,int l,int mid,int u){
     int b[u+1],i=l, j=mid+1, k=l;   //i-count index of 1st subarray,j-count index of 2nd subarray,k-index of copy array i.e array b
     while(i<=mid && j<=u)   //loop access every elemnt in 2 sub-arrays compare them with each other and then copy it in array b untill one of the 2 subarrays ends
