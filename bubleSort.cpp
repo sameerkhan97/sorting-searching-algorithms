@@ -15,7 +15,8 @@ void display(int *a, int n) {
 }
 void bubleSort(int *a, int n){
     int c=1,i;
-    //c will count the number of time array is checked and while loop will operate untill c is smaller than array size.
+    //c will count the number of time array is checked
+    //while loop will operate untill c is smaller than array size.
      while(c<n) 
      {
         for(i=0;i<n-1;i++)
